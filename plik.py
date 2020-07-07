@@ -1,6 +1,9 @@
 import turtle as t
 import random as r
 
+plspeed = input("Speed(from 1 to 500): ")
+plspeed = int(plspeed)
+
 x = r.randrange(-280, 300, 15)
 y = r.randrange(-290, 290, 15)
 
@@ -29,8 +32,6 @@ pl.penup()
 pl.shapesize(stretch_wid=1.44, stretch_len=1.44)
 pl.speed(0)
 pl.goto(290, 0)
-
-plspeed = 15
 
 # Obstacle, AI
 en = t.Turtle()
@@ -119,7 +120,7 @@ while True:
 
 
     AIMov()
-    
+
 
 pl.goto(-360, 300)
 
@@ -196,3 +197,4 @@ while True:
         en.hideturtle()
 
     print('X: ', pl.xcor(),'y: ', pl.ycor())
+
